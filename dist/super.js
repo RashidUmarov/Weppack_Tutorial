@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("ES6 modules!"),console.log("sum(2,3)=",5),console.log("multiply(10)=",80),console.log("myFN(10)=",3.14*10),document.write("Hello, world!!!!! \n")})();
