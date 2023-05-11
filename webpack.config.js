@@ -1,11 +1,18 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
     output: {
         filename: "main.js"
     },
-    plugins:[ new MiniCssExtractPlugin()],
+    plugins:[
+        new MiniCssExtractPlugin(),
+        new HtmlWebpackPlugin( {
+            template: "./src/index.pug",
+            filename: "index.html"
+        })
+    ],
     module:{
         rules:[
             {
@@ -16,6 +23,13 @@ module.exports = {
                     }
                 }, 'css-loader'],
                 test:/\.css$/
+            },
+            {
+                test:/\.pug$/,
+                loader: 'pug-loader',
+				options:  {
+				    pretty: true
+				}
             }
         ]
     }
