@@ -18,7 +18,7 @@ module.exports = {
         }),
         new TerserWebpackPlugin(),
         new StylelintPlugin({
-            configFile: 'stylelint.rc',
+            configFile: 'stylelintrc',
             context: 'src',
             files: '**/*.css',
             failOnError: false,
