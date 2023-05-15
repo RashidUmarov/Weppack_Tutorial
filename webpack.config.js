@@ -9,10 +9,15 @@ module.exports = {
         port: 3030,
         hot: true,
     },
+    stats: {
+        children: false
+    },
     devtool: 'inline-source-map',
     plugins:[ new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             title: 'Development',
+            template: "./src/index.html",
+            filename: "index.html"
         }),
     ],
     output: {
