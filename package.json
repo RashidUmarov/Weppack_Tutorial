@@ -6,12 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
+    "lint": "eslint  ./src/*.js",
     "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "eslint": "^7.0.0",
+    "eslint-loader": "^4.0.2",
     "html-webpack-plugin": "^5.5.1",
     "husky": "^8.0.3",
     "mini-css-extract-plugin": "^2.7.5",
