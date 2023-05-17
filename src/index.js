@@ -1,7 +1,10 @@
 import './styles.css';
 import { sum, multiply as myFN} from './math';
 
-document.write('Hello, world!!!!! \n');
+document.open();
+document.write('<h1>Hello, world!!!!! </h1>');
+document.close();
+
 
 const multiply= (a) => a*8;
 
