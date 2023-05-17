@@ -19,7 +19,7 @@ npm run prod-server
 json-server --watch database.json
 ```
 
-5. Установлен пакет eslint, для ручной проверки JS-файла, перейти в /ыкс
+5. Установлен пакет eslint, для ручной проверки JS-файла, перейти в /src
 ```
 npx eslint index.js
 ```
